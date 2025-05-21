@@ -1,12 +1,32 @@
-# React + Vite
+# Portafolio - Dylan Blasco
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portafolio personal moderno y minimalista, creado para mostrar mi experiencia, proyectos y habilidades como desarrollador y diseñador web.
 
-Currently, two official plugins are available:
+## 🛠️ Tecnologías
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- Tailwind CSS
+- Vite
 
-## Expanding the ESLint configuration
+> **Nota:**  
+> Este repositorio está en desarrollo. Aún faltan varias funcionalidades y detalles por implementar antes de alcanzar la versión final.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Instalación
+
+```bash
+git clone https://github.com/Dylan10123/Portafolio-Dylan-Blasco.git
+cd Portafolio-Dylan-Blasco
+npm install
+npm run dev
+```
+
+---
+
+### 7. **Autor o contacto**
+
+```md
+## 👨‍💻 Autor
+
+In: [Dylan Blasco](https://www.linkedin.com/in/dylan-blasco-de-souza-904b20262/)  
+Desarrollador web y estudiante de un máster en Inteligencia Artificial
+```
