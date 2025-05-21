@@ -2,14 +2,14 @@
 
 Portafolio personal moderno y minimalista, creado para mostrar mi experiencia, proyectos y habilidades como desarrollador y diseñador web.
 
+> **Nota:**  
+> Este repositorio está en desarrollo. Aún faltan varias funcionalidades y detalles por implementar antes de alcanzar la versión final.
+
 ## 🛠️ Tecnologías
 
 - React
 - Tailwind CSS
 - Vite
-
-> **Nota:**  
-> Este repositorio está en desarrollo. Aún faltan varias funcionalidades y detalles por implementar antes de alcanzar la versión final.
 
 ## 🚀 Instalación
 
