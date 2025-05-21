@@ -1,0 +1,27 @@
+@layer utilities {
+  @keyframes rotate-cube-pause {
+    0%,
+    20% {
+      transform: rotateX(0deg);
+    }
+    25%,
+    45% {
+      transform: rotateX(90deg);
+    }
+    50%,
+    70% {
+      transform: rotateX(180deg);
+    }
+    75%,
+    95% {
+      transform: rotateX(270deg);
+    }
+    100% {
+      transform: rotateX(360deg);
+    }
+  }
+
+  .animate-rotate-cube-pause {
+    animation: rotate-cube-pause 13s infinite ease-in-out;
+  }
+}

@@ -1,0 +1,51 @@
+# 👉 Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 👉 Editores
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 👉 Node
+node_modules/
+package-lock.json
+
+# 👉 Vite / React / Builds
+dist/
+dist-ssr
+build/
+*.local
+
+# 👉 Tailwind / PostCSS (generados o temporales)
+*.css.map
+
+# 👉 Variables de entorno
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 👉 Sistemas operativos
+.DS_Store
+Thumbs.db
+
+# 👉 Misc
+*.cache
+*.tmp
+*.swp
+*.swo
+*.bak
+*.old
