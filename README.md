@@ -22,11 +22,7 @@ npm run dev
 
 ---
 
-### 7. **Autor o contacto**
-
-```md
-## 👨‍💻 Autor
+### 👨‍💻 Autor
 
 In: [Dylan Blasco](https://www.linkedin.com/in/dylan-blasco-de-souza-904b20262/)  
 Desarrollador web y estudiante de un máster en Inteligencia Artificial
-```
