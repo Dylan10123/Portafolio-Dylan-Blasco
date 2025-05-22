@@ -1,4 +1,4 @@
-import ExperienceTitle from "./components/ExperienceTitle";
+import SectionTitle from "./components/SectionTitle";
 import HeroImage from "./components/HeroImage";
 import HeaderBox from "./components/HeaderBox";
 import { useState, useEffect } from "react";
@@ -20,6 +20,8 @@ function IntroText({ showInitialContent }) {
     </section>
   );
 }
+
+// TODO: Cambiar la letra de los títulos, buscar una mas minimalista
 
 function App() {
   const [isInitialContentVisible, setIsInitialContentVisible] = useState(false);
@@ -53,7 +55,7 @@ function App() {
   };
 
   return (
-    <body className="bg-zinc-800">
+    <body className="bg-zinc-800 text-zinc-200">
       <header>
         <HeaderBox
           showInitialContent={isInitialContentVisible}
@@ -63,24 +65,24 @@ function App() {
         />
       </header>
       <main className="p-4">
-        <section className="grid grid-cols-4 grid-rows-12 gap-x-4 gap-y-2 h-screen">
+        <section className="grid grid-cols-4 grid-rows-12 gap-x-4 gap-y-2 h-screen mb-12">
           <section className="col-start-2 row-start-4 row-end-12 col-span-3">
             <HeroImage />
           </section>
-          <section className="text-white col-start-1 row-start-9 row-end-11 col-span-4">
+          <section className="col-start-1 row-start-8 row-end-11 col-span-4">
             <Title
               staticText="WEB"
-              dynamicText1="Designer"
-              dynamicText2="Developer"
-              dynamicText3="Engineer"
-              dynamicText4="Innovator"
+              dynamicText1="DESIGNER"
+              dynamicText2="DEVELOPER"
+              dynamicText3="ENGINEER"
+              dynamicText4="INNOVATOR"
             />
           </section>
           <IntroText showInitialContent={isInitialContentVisible} />
         </section>
         <section>
           <section>
-            <ExperienceTitle />
+            <SectionTitle text1="Mi" highlight="EXPERIENCIA" alignRight />
           </section>
           <article>hablo de mi experiencia en una empresa</article>
           <article>hablo de mi experiencia en otra empresa</article>

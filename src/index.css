@@ -18,12 +18,30 @@
 
 @font-face {
   font-family: "NIKEA";
-  src: url("/assets/fonts/NIKEA.woff2") format("woff2");
+  src: url("./assets/fonts/NIKEA.woff2") format("woff2");
   font-style: normal;
   font-weight: 100 700;
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Pinyon";
+  src: url("./assets/fonts/PinyonScript-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "VinaSans";
+  src: url("./assets/fonts/VinaSans-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+}
+
 @theme {
   --font-nikea: "NIKEA", system-ui, sans-serif;
+  --font-pinyon: "Pinyon", serif;
+  --font-vina-sans: "VinaSans", system-ui, sans-serif;
 }
