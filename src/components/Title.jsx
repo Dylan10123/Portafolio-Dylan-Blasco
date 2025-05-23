@@ -47,7 +47,7 @@ export default function Title({
               </span>
             </span>
           </h1>
-          <h2 className="animate-fade-in-right text-4xl font-pinyon text-right mx-8">
+          <h2 className="animate-fade-in-left text-4xl font-pinyon text-right mx-8">
             Dylan Blasco
           </h2>
         </>

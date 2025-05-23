@@ -1,3 +1,4 @@
+import ExperienceCard from "./components/ExperienceCard";
 import SectionTitle from "./components/SectionTitle";
 import HeroImage from "./components/HeroImage";
 import HeaderBox from "./components/HeaderBox";
@@ -56,7 +57,11 @@ function App() {
 
   return (
     <body className="bg-zinc-800 text-zinc-200">
-      <header>
+      <header
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out ${
+          isMenuOpen ? "h-full" : "h-20 delay-[600ms]"
+        }`}
+      >
         <HeaderBox
           showInitialContent={isInitialContentVisible}
           isMenuOpen={isMenuOpen}
@@ -64,8 +69,8 @@ function App() {
           showMenuContent={isMenuVisible}
         />
       </header>
-      <main className="p-4">
-        <section className="grid grid-cols-4 grid-rows-12 gap-x-4 gap-y-2 h-screen mb-12">
+      <main className="px-4">
+        <section className="grid grid-cols-4 grid-rows-12 gap-x-4 gap-y-2 mb-12 h-screen">
           <section className="col-start-2 row-start-4 row-end-12 col-span-3">
             <HeroImage />
           </section>
@@ -82,10 +87,24 @@ function App() {
         </section>
         <section>
           <section>
-            <SectionTitle text1="Mi" highlight="EXPERIENCIA" alignRight />
+            <SectionTitle text1="Mi" highlight="EXPERIENCIA" center />
           </section>
-          <article>hablo de mi experiencia en una empresa</article>
-          <article>hablo de mi experiencia en otra empresa</article>
+          <ExperienceCard
+            puesto={"Full Stack Developer"}
+            empresa={"PixelCom"}
+            descripcion={
+              "Utilización de metodologías de trabajo ágiles (CICD) Experiencia con tecnologías como React.js, Storybook, Node.js, Terraform y Kubernetes."
+            }
+            backgroundColor={"bg-zinc-700"}
+          />
+          <ExperienceCard
+            puesto={"Técnico en sistemas informáticos"}
+            empresa={"IVO (Intituto Valenciano de Oncología)"}
+            descripcion={
+              "Resolución de problemas de equipos e impresoras, tanto de forma física como remota. Gestión de bases de datos, actualizando la información obsoleta. Utilización de programas como, DameWare, Acronis, Mini Tool - Partition Wizard."
+            }
+            backgroundColor={"bg-zinc-700"}
+          />
         </section>
       </main>
     </body>

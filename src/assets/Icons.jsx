@@ -22,5 +22,3 @@ export const DBLogo = (props) => (
     <path d="M18.0202 9.03571H22.3996V12.4713H18.0202V9.03571Z" fill="white" />
   </svg>
 );
-
-// mas svg...
