@@ -1,7 +1,9 @@
 import ExperienceCard from "./components/ExperienceCard";
 import SectionTitle from "./components/SectionTitle";
+import ActivityBox from "./components/ActivityBox";
 import HeroImage from "./components/HeroImage";
 import HeaderBox from "./components/HeaderBox";
+import { PixelComLogo, MasterDLogo, FreeCodeCampLogo } from "./assets/Icons";
 import { useState, useEffect } from "react";
 import TextBox from "./components/TextBox";
 import Title from "./components/Title";
@@ -21,8 +23,6 @@ function IntroText({ showInitialContent }) {
     </section>
   );
 }
-
-// TODO: Cambiar la letra de los títulos, buscar una mas minimalista
 
 function App() {
   const [isInitialContentVisible, setIsInitialContentVisible] = useState(false);
@@ -85,26 +85,63 @@ function App() {
           </section>
           <IntroText showInitialContent={isInitialContentVisible} />
         </section>
-        <section>
-          <section>
+        <section className="my-24">
+          <section className="mb-24">
             <SectionTitle text1="Mi" highlight="EXPERIENCIA" center />
           </section>
-          <ExperienceCard
-            puesto={"Full Stack Developer"}
-            empresa={"PixelCom"}
-            descripcion={
-              "Utilización de metodologías de trabajo ágiles (CICD) Experiencia con tecnologías como React.js, Storybook, Node.js, Terraform y Kubernetes."
-            }
-            backgroundColor={"bg-zinc-700"}
-          />
-          <ExperienceCard
-            puesto={"Técnico en sistemas informáticos"}
-            empresa={"IVO (Intituto Valenciano de Oncología)"}
-            descripcion={
-              "Resolución de problemas de equipos e impresoras, tanto de forma física como remota. Gestión de bases de datos, actualizando la información obsoleta. Utilización de programas como, DameWare, Acronis, Mini Tool - Partition Wizard."
-            }
-            backgroundColor={"bg-zinc-700"}
-          />
+          <section className="flex flex-col gap-4 font-inter">
+            <ExperienceCard
+              puesto={"Full Stack Developer"}
+              empresa={"PixelCom"}
+              descripcion={`Periodo de formación profesional dual en el que he trabajado con metodologías ágiles (CI/CD) y he
+                 participado en el desarrollo de soluciones tanto en el frontend como en el backend, utilizando tecnologías modernas.`}
+              tecnologias={[
+                "React",
+                "TypeScript",
+                "Storybook",
+                "AWS",
+                "Node.js",
+                "Express",
+                "DynamoDB",
+                "Terraform",
+                "Kubernetes",
+                "WebSockets",
+              ]}
+            >
+              <PixelComLogo />
+            </ExperienceCard>
+          </section>
+        </section>
+        <section className="my-24">
+          <section className="my-">
+            <SectionTitle text1="Actividades" highlight="EN PROGRESO" center />
+          </section>
+          <section className="flex flex-col gap-8 font-inter">
+            <ActivityBox
+              title={"Master en IA"}
+              company={"MasterD | Davante"}
+              companyDescription={
+                "Compañía de formación abierta lider en España"
+              }
+              logo={<MasterDLogo />}
+              body={
+                "Hago este master porque considero que la IA se complementa muy bien con el desarrollo web. Dando la posibilidad de crear aplicaciones que sean mas inteligentes y dinámicas."
+              }
+              infoLink={"https://www.masterd.es/master-inteligencia-artificial"}
+            />
+            <ActivityBox
+              title={"Cursos de Python"}
+              company={"FreeCodeCamp"}
+              companyDescription={
+                "Plataforma de formación en línea que enseña desarrollo web"
+              }
+              logo={<FreeCodeCampLogo width="48" height="36" />}
+              body={
+                "De vez en cunado hago alguno de los cursos de FreeCodeCamp para complementar lo que aprendo en clase o actualizarme en alguno de los campos que ya conozco."
+              }
+              infoLink={"https://forum.freecodecamp.org"}
+            />
+          </section>
         </section>
       </main>
     </body>

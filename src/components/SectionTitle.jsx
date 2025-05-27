@@ -5,7 +5,7 @@ export default function SectionTitle({
   center = false,
 }) {
   return (
-    <h2 className="text-5xl font-vina-sans text-balance my-10">
+    <h2 className="text-5xl font-vina-sans text-balance my-10 flex flex-col items-center">
       <div
         className={`font-pinyon leading-2 ${alignRight ? "text-right" : ""} ${
           center ? "text-center -translate-x-20" : ""
