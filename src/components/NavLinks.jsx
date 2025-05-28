@@ -1,35 +1,43 @@
-export default function NavLinks({ isOpen }) {
+export default function NavLinks({
+  isOpen,
+  onMenuButtonClick,
+  activeSection = "",
+}) {
   return (
     <>
-      <nav className="text-white font-vina-sans text-6xl h-fit">
-        <ul className="flex flex-col gap-16 justify-center items-center h-full">
+      <nav className="text-zinc-200 font-vina-sans text-6xl h-fit">
+        <div className="flex flex-col gap-16 justify-center items-center h-full">
           {[
-            { label: "Inicio", fromLeft: true },
-            { label: "Experiencia", fromLeft: false },
-            { label: "Actividad", fromLeft: true },
-            { label: "Proyectos", fromLeft: false },
-            { label: "Contacto", fromLeft: true },
-          ].map(({ label, fromLeft }, index) => (
-            <li
-              key={index}
-              className={`transition-all duration-500 ease-in-out ${
+            { id: "inicio", label: "Inicio", fromLeft: true },
+            { id: "experiencia", label: "Experiencia", fromLeft: false },
+            { id: "actividad", label: "Actividad", fromLeft: true },
+            { id: "proyectos", label: "Proyectos", fromLeft: false },
+            { id: "contacto", label: "Contacto", fromLeft: true },
+          ].map((item) => (
+            <a
+              key={item.id}
+              href={`#${item.id}`}
+              onClick={onMenuButtonClick}
+              className={`transition-all duration-500 ease-in-out scroll-smooth cursor-pointer ${
                 isOpen
                   ? `${
-                      fromLeft
+                      item.fromLeft
                         ? "animate-fade-in-left"
                         : "animate-fade-in-right"
                     }`
                   : `${
-                      fromLeft
+                      item.fromLeft
                         ? "animate-fade-out-left"
                         : "animate-fade-out-right"
                     }`
-              }`}
+              }
+              ${activeSection === item.id ? "text-violet-400" : "text-zinc-200"}
+              `}
             >
-              {label.toUpperCase()}
-            </li>
+              {item.label.toUpperCase()}
+            </a>
           ))}
-        </ul>
+        </div>
       </nav>
     </>
   );

@@ -7,9 +7,9 @@ export default function ExperienceCard({
 }) {
   return (
     <article
-      className={`border border-zinc-700 p-8 rounded-4xl flex flex-col w-full gap-6`}
+      className={`bg-zinc-900/70 p-4 rounded-2xl flex flex-col gap-6 shadow-lg`}
     >
-      <section className="bg-zinc-900 w-80 h-52 rounded-2xl flex items-center justify-center p-4">
+      <section className="bg-zinc-700/50 w-full h-fit rounded-2xl flex items-center justify-center p-4">
         {children}
       </section>
 

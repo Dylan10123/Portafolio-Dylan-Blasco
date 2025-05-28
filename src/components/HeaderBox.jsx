@@ -7,6 +7,7 @@ export default function HeaderBox({
   isMenuOpen,
   onMenuButtonClick,
   showMenuContent,
+  activeSection,
 }) {
   return (
     <section
@@ -31,7 +32,13 @@ export default function HeaderBox({
         </>
       )}
 
-      {showMenuContent && <NavLinks isOpen={isMenuOpen} />}
+      {showMenuContent && (
+        <NavLinks
+          isOpen={isMenuOpen}
+          activeSection={activeSection}
+          onMenuButtonClick={onMenuButtonClick}
+        />
+      )}
     </section>
   );
 }

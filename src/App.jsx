@@ -1,9 +1,9 @@
+import { PixelComLogo, MasterDLogo, FreeCodeCampLogo } from "./assets/Icons";
 import ExperienceCard from "./components/ExperienceCard";
 import SectionTitle from "./components/SectionTitle";
 import ActivityBox from "./components/ActivityBox";
 import HeroImage from "./components/HeroImage";
 import HeaderBox from "./components/HeaderBox";
-import { PixelComLogo, MasterDLogo, FreeCodeCampLogo } from "./assets/Icons";
 import { useState, useEffect } from "react";
 import TextBox from "./components/TextBox";
 import Title from "./components/Title";
@@ -28,6 +28,7 @@ function App() {
   const [isInitialContentVisible, setIsInitialContentVisible] = useState(false);
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -55,6 +56,26 @@ function App() {
     setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
   };
 
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        rootMargin: "-50% 0px -40% 0px", // Detecta la sección centrada en pantalla
+        threshold: 0.1,
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <body className="bg-zinc-800 text-zinc-200">
       <header
@@ -67,10 +88,14 @@ function App() {
           isMenuOpen={isMenuOpen}
           onMenuButtonClick={handleMenuButtonClick}
           showMenuContent={isMenuVisible}
+          activeSection={activeSection}
         />
       </header>
       <main className="px-4">
-        <section className="grid grid-cols-4 grid-rows-12 gap-x-4 gap-y-2 mb-12 h-screen">
+        <section
+          id="inicio"
+          className="grid grid-cols-4 grid-rows-12 gap-x-4 gap-y-2 mb-12 h-screen scroll-mt-24"
+        >
           <section className="col-start-2 row-start-4 row-end-12 col-span-3">
             <HeroImage />
           </section>
@@ -85,7 +110,7 @@ function App() {
           </section>
           <IntroText showInitialContent={isInitialContentVisible} />
         </section>
-        <section className="my-24">
+        <section id="experiencia" className="my-24 scroll-mt-24">
           <section className="mb-24">
             <SectionTitle text1="Mi" highlight="EXPERIENCIA" center />
           </section>
@@ -112,8 +137,8 @@ function App() {
             </ExperienceCard>
           </section>
         </section>
-        <section className="my-24">
-          <section className="my-">
+        <section id="actividad" className="my-24 scroll-mt-24">
+          <section className="my-24">
             <SectionTitle text1="Actividades" highlight="EN PROGRESO" center />
           </section>
           <section className="flex flex-col gap-8 font-inter">
@@ -125,7 +150,7 @@ function App() {
               }
               logo={<MasterDLogo />}
               body={
-                "Hago este master porque considero que la IA se complementa muy bien con el desarrollo web. Dando la posibilidad de crear aplicaciones que sean mas inteligentes y dinámicas."
+                "Cursando un máster en IA para complementar mis habilidades en desarrollo web y crear aplicaciones más inteligentes y adaptativas"
               }
               infoLink={"https://www.masterd.es/master-inteligencia-artificial"}
             />
@@ -137,7 +162,7 @@ function App() {
               }
               logo={<FreeCodeCampLogo width="48" height="36" />}
               body={
-                "De vez en cunado hago alguno de los cursos de FreeCodeCamp para complementar lo que aprendo en clase o actualizarme en alguno de los campos que ya conozco."
+                "Realizo cursos periódicamente en FreeCodeCamp para reforzar conocimientos y mantenerme actualizado en desarrollo web y Python"
               }
               infoLink={"https://forum.freecodecamp.org"}
             />
