@@ -1,6 +1,6 @@
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 
-export default function ActivityBox({
+export default function ActivityCard({
   title,
   company,
   companyDescription,
