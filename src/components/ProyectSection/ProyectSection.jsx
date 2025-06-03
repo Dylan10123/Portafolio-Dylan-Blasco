@@ -1,8 +1,8 @@
 import SectionTitle from "../SectionTitle";
 import JarallaxProyect from "./JarallaxProyect";
-import TallerMock from "./assets/images/Taller_Mock.webp";
-import KodeMiseMock from "./assets/images/KodeMise_Mock.webp";
-import PixelComMock from "./assets/images/PixelCom_Mock.webp";
+import TallerMock from "/images/Taller_Mock.webp";
+import KodeMiseMock from "/images/KodeMise_Mock.webp";
+import PixelComMock from "/images/PixelCom_Mock.webp";
 
 export default function ProyectSection() {
   return (
