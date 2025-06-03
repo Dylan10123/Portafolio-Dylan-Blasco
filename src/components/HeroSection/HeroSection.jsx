@@ -4,7 +4,7 @@ import TextBox from "../TextBox";
 
 function IntroText({ showInitialContent }) {
   return (
-    <section className="row-start-11 col-start-1 col-span-4 mt-6">
+    <section className="row-start-12 col-start-1 col-span-4 mt-6">
       {showInitialContent && (
         <TextBox className="animate-fade-in-up">
           Creativo y amante del diseño digital, con una mentalidad
