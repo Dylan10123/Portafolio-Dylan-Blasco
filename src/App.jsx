@@ -1,6 +1,8 @@
 import ExperienceSection from "./components/ExperienceSection/ExperienceSection";
 import ActivitySection from "./components/ActivitySection/ActivitySection";
+import ContactSection from "./components/ContactSection/ContactSection";
 import ProyectSection from "./components/ProyectSection/ProyectSection";
+import FooterSection from "./components/FooterSection/FooterSection";
 import StackSection from "./components/StackSection/StackSection";
 import HeroSection from "./components/HeroSection/HeroSection";
 import HeaderBox from "./components/HeaderSection/HeaderBox";
@@ -30,7 +32,9 @@ function App() {
         <ExperienceSection />
         <ActivitySection />
         <ProyectSection />
+        <ContactSection />
       </main>
+      <FooterSection />
     </body>
   );
 }

@@ -7,7 +7,7 @@ export default function ProyectSection() {
       <div className="mb-24">
         <SectionTitle text1="Mis" highlight="Proyectos" text2="Favoritos" />
       </div>
-      <div className="absolute w-full left-0 overflow-hidden">
+      <div className="-mx-4 w-screen left-0 overflow-hidden">
         <JarallaxProyect
           titulo="Garatge Javier"
           descripcion="Proyecto personal"
