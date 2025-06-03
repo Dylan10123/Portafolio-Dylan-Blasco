@@ -11,18 +11,18 @@ export default function ProyectSection() {
         <JarallaxProyect
           titulo="Garatge Javier"
           descripcion="Proyecto personal"
-          imgSrc="src/assets/images/Taller_Mock.webp"
+          imgSrc="./assets/images/Taller_Mock.webp"
           link="https://github.com/Dylan10123/Garaje_Javier"
         />
         <JarallaxProyect
           titulo="KodeMise"
           descripcion="Red Social"
-          imgSrc="src/assets/images/KodeMise_Mock.webp"
+          imgSrc="./assets/images/KodeMise_Mock.webp"
         />
         <JarallaxProyect
           titulo="TV Graphics"
           descripcion="Grafismo para carreras"
-          imgSrc="src/assets/images/PixelCom_Mock.webp"
+          imgSrc="./assets/images/PixelCom_Mock.webp"
           link={
             "https://pixelcom.io/professional-sports-broadcast-graphics-solution"
           }
