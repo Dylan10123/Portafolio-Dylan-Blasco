@@ -1,5 +1,8 @@
 import SectionTitle from "../SectionTitle";
 import JarallaxProyect from "./JarallaxProyect";
+import TallerMock from "./assets/images/Taller_Mock.webp";
+import KodeMiseMock from "./assets/images/KodeMise_Mock.webp";
+import PixelComMock from "./assets/images/PixelCom_Mock.webp";
 
 export default function ProyectSection() {
   return (
@@ -11,18 +14,18 @@ export default function ProyectSection() {
         <JarallaxProyect
           titulo="Garatge Javier"
           descripcion="Proyecto personal"
-          imgSrc="./assets/images/Taller_Mock.webp"
+          imgSrc={TallerMock}
           link="https://github.com/Dylan10123/Garaje_Javier"
         />
         <JarallaxProyect
           titulo="KodeMise"
           descripcion="Red Social"
-          imgSrc="./assets/images/KodeMise_Mock.webp"
+          imgSrc={KodeMiseMock}
         />
         <JarallaxProyect
           titulo="TV Graphics"
           descripcion="Grafismo para carreras"
-          imgSrc="./assets/images/PixelCom_Mock.webp"
+          imgSrc={PixelComMock}
           link={
             "https://pixelcom.io/professional-sports-broadcast-graphics-solution"
           }
