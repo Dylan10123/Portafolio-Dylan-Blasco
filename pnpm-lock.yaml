@@ -17,15 +17,27 @@ importers:
       '@tabler/icons-react':
         specifier: ^3.31.0
         version: 3.31.0(react@19.1.0)
+      '@use-gesture/react':
+        specifier: ^10.3.1
+        version: 10.3.1(react@19.1.0)
+      jarallax:
+        specifier: ^2.2.1
+        version: 2.2.1
       react:
         specifier: ^19.1.0
         version: 19.1.0
       react-dom:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
+      react-intersection-observer:
+        specifier: ^9.16.0
+        version: 9.16.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react-router-dom:
         specifier: ^7.6.0
         version: 7.6.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react-scroll-parallax:
+        specifier: ^3.4.5
+        version: 3.4.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     devDependencies:
       '@tailwindcss/postcss':
         specifier: ^4.1.6
@@ -528,6 +540,14 @@ packages:
   '@types/estree@1.0.7':
     resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
 
+  '@use-gesture/core@10.3.1':
+    resolution: {integrity: sha512-WcINiDt8WjqBdUXye25anHiNxPc0VOrlT8F6LLkU6cycrOGUDyY/yyFmsg3k8i5OLvv25llc0QC45GhR/C8llw==}
+
+  '@use-gesture/react@10.3.1':
+    resolution: {integrity: sha512-Yy19y6O2GJq8f7CHf7L0nxL8bf4PZCPaVOCgJrusOeFHY1LvHgYXnmnXg6N5iwAnbgbZCDjo60SiM6IPJi9C5g==}
+    peerDependencies:
+      react: '>= 16.8.0'
+
   '@vitejs/plugin-react@4.4.1':
     resolution: {integrity: sha512-IpEm5ZmeXAP/osiBXVVP5KjFMzbWOonMs0NaQQl+xYnUAcq4oHUBsF2+p4MgKWG4YMmFYJU8A6sxRPuowllm6w==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -540,6 +560,9 @@ packages:
     hasBin: true
     peerDependencies:
       postcss: ^8.1.0
+
+  bezier-easing@2.1.0:
+    resolution: {integrity: sha512-gbIqZ/eslnUFC1tjEvtz0sgx+xTK20wDnYMIA27VA04R7w6xxXQPZDbibjA9DTWZRA2CXtwHykkVzlCaAJAZig==}
 
   browserslist@4.24.5:
     resolution: {integrity: sha512-FDToo4Wo82hIdgc1CQ+NQD0hEhmpPjrZ3hiUgwgOG6IuTdlpr8jdjyG24P6cNP1yJpTLzS5OcGgSw0xmDU1/Tw==}
@@ -615,6 +638,9 @@ packages:
 
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
+
+  jarallax@2.2.1:
+    resolution: {integrity: sha512-O4pqiWGp856cTGG5uBG9b0Uk7AIRmfFCVisRwgpICsG2xyIRnUrVbx4SIbpzUDAhkD00jdjBiqb1bZPTkHi1vQ==}
 
   jiti@2.4.2:
     resolution: {integrity: sha512-rg9zJN+G4n2nfJl5MW3BMygZX56zKPNVEYYqq7adpmMh4Jn2QNEwhvQlFy6jPVdcod7txZtKHWnyZiA3a0zP7A==}
@@ -731,6 +757,10 @@ packages:
     resolution: {integrity: sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==}
     engines: {node: '>=0.10.0'}
 
+  parallax-controller@1.7.1:
+    resolution: {integrity: sha512-facVMEBnUynzMN7hCSqyNpF6uyCpVIl4XAUyTR9D8q2JlhgyPY6bZtj/OkFk3+Cpka1TnYCppQb8BzDWHtSaZg==}
+    engines: {node: '>=12'}
+
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
@@ -749,6 +779,15 @@ packages:
     resolution: {integrity: sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==}
     peerDependencies:
       react: ^19.1.0
+
+  react-intersection-observer@9.16.0:
+    resolution: {integrity: sha512-w9nJSEp+DrW9KmQmeWHQyfaP6b03v+TdXynaoA964Wxt7mdR3An11z4NNCQgL4gKSK7y1ver2Fq+JKH6CWEzUA==}
+    peerDependencies:
+      react: ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^17.0.0 || ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
 
   react-refresh@0.17.0:
     resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
@@ -770,6 +809,13 @@ packages:
     peerDependenciesMeta:
       react-dom:
         optional: true
+
+  react-scroll-parallax@3.4.5:
+    resolution: {integrity: sha512-4NLZQ8cZEUyxoA95DfrXWneOOUSFrFmpM0dZNzMErmuJ0LzY+CCw8Xw0hqB6xxHWxNknfs46AozyIPSWkZeucA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16.8.0-0 || >=17.0.1 || ^18.0.0
+      react-dom: ^16.8.0-0 || >=17.0.1 || ^18.0.0
 
   react@19.1.0:
     resolution: {integrity: sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==}
@@ -814,6 +860,9 @@ packages:
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
+
+  video-worker@2.2.0:
+    resolution: {integrity: sha512-bjdpCArfD/kvt3HBU2sJUEEFq+6HjIufKXL2NojWswInxalJwR5yh/cgaGismHS8PAe5hx+W0GfrFqlxJTfI/w==}
 
   vite@6.3.5:
     resolution: {integrity: sha512-cZn6NDFE7wdTpINgs++ZJ4N49W2vRp8LCKrn3Ob1kYNtOo21vfDoaV5GzBfLU4MovSAB8uNRm4jgzVQZ+mBzPQ==}
@@ -1247,6 +1296,13 @@ snapshots:
 
   '@types/estree@1.0.7': {}
 
+  '@use-gesture/core@10.3.1': {}
+
+  '@use-gesture/react@10.3.1(react@19.1.0)':
+    dependencies:
+      '@use-gesture/core': 10.3.1
+      react: 19.1.0
+
   '@vitejs/plugin-react@4.4.1(vite@6.3.5(jiti@2.4.2)(lightningcss@1.29.2))':
     dependencies:
       '@babel/core': 7.27.1
@@ -1267,6 +1323,8 @@ snapshots:
       picocolors: 1.1.1
       postcss: 8.5.3
       postcss-value-parser: 4.2.0
+
+  bezier-easing@2.1.0: {}
 
   browserslist@4.24.5:
     dependencies:
@@ -1340,6 +1398,10 @@ snapshots:
   globals@11.12.0: {}
 
   graceful-fs@4.2.11: {}
+
+  jarallax@2.2.1:
+    dependencies:
+      video-worker: 2.2.0
 
   jiti@2.4.2: {}
 
@@ -1418,6 +1480,10 @@ snapshots:
 
   normalize-range@0.1.2: {}
 
+  parallax-controller@1.7.1:
+    dependencies:
+      bezier-easing: 2.1.0
+
   picocolors@1.1.1: {}
 
   picomatch@4.0.2: {}
@@ -1435,6 +1501,12 @@ snapshots:
       react: 19.1.0
       scheduler: 0.26.0
 
+  react-intersection-observer@9.16.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+    dependencies:
+      react: 19.1.0
+    optionalDependencies:
+      react-dom: 19.1.0(react@19.1.0)
+
   react-refresh@0.17.0: {}
 
   react-router-dom@7.6.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
@@ -1449,6 +1521,12 @@ snapshots:
       react: 19.1.0
       set-cookie-parser: 2.7.1
     optionalDependencies:
+      react-dom: 19.1.0(react@19.1.0)
+
+  react-scroll-parallax@3.4.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+    dependencies:
+      parallax-controller: 1.7.1
+      react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
 
   react@19.1.0: {}
@@ -1510,6 +1588,8 @@ snapshots:
       browserslist: 4.24.5
       escalade: 3.2.0
       picocolors: 1.1.1
+
+  video-worker@2.2.0: {}
 
   vite@6.3.5(jiti@2.4.2)(lightningcss@1.29.2):
     dependencies:

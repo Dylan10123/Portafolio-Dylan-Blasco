@@ -35,7 +35,7 @@ function PillBox() {
 
 export default function StackSection() {
   return (
-    <section id="stack">
+    <section id="stack" className="scroll-mt-24">
       <section className="mt-24">
         <SectionTitle highlight="STACK" text2="Principal" />
       </section>
