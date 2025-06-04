@@ -16,7 +16,8 @@ export default function ContactSection() {
   return (
     <section
       id="contacto"
-      className="my-24 scroll-mt-24 flex flex-col items-center justify-center"
+      data-section
+      className="min-h-screen scroll-mt-24 flex flex-col items-center justify-center"
     >
       <div className="mb-10">
         <SectionTitle text1="¿Quieres" highlight="Contactar" text2="Conmigo?" />
@@ -35,9 +36,6 @@ export default function ContactSection() {
           text="dbds.101203@gmail.com"
           className="w-fit bg-violet-400 p-3 text-lg rounded-md"
           onCopy={handleCopy}
-          data-tooltip-target="tooltip-click"
-          data-tooltip-trigger="click"
-          id="tooltip-default"
         >
           <span>
             {isCopied ? (

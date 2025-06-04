@@ -5,11 +5,15 @@ import TextBox from "../TextBox";
 
 export default function ExperienceSection() {
   return (
-    <section id="experiencia" className="my-24 scroll-mt-24">
-      <section className="mb-24">
+    <section
+      id="experiencia"
+      data-section
+      className="min-h-screen scroll-mt-24"
+    >
+      <div className="mb-24">
         <SectionTitle text1="¿Qué" highlight="EXPERIENCIA" text2="Tengo?" />
-      </section>
-      <section className="flex flex-col gap-4 font-inter">
+      </div>
+      <article className="flex flex-col gap-4 font-inter">
         <ExperienceCard
           puesto={"Full Stack Developer"}
           empresa={"PixelCom"}
@@ -34,7 +38,7 @@ export default function ExperienceSection() {
             tecnologías modernas.
           </TextBox>
         </ExperienceCard>
-      </section>
+      </article>
     </section>
   );
 }

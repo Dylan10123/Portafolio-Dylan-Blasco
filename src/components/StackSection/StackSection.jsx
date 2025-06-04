@@ -35,13 +35,13 @@ function PillBox() {
 
 export default function StackSection() {
   return (
-    <section id="stack" className="scroll-mt-24">
-      <section className="mt-24">
+    <section id="stack" data-section className="scroll-mt-24 min-h-screen">
+      <div className="mt-24">
         <SectionTitle highlight="STACK" text2="Principal" />
-      </section>
-      <section className="flex flex-col gap-6 font-inter">
+      </div>
+      <article className="flex flex-col gap-6 font-inter">
         <PillBox />
-      </section>
+      </article>
     </section>
   );
 }

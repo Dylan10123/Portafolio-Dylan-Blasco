@@ -20,12 +20,13 @@ export default function HeroSection({ isInitialContentVisible }) {
   return (
     <section
       id="inicio"
+      data-section
       className="grid grid-cols-4 grid-rows-12 gap-x-4 gap-y-2 mb-12 h-screen scroll-mt-24"
     >
-      <section className="col-start-2 row-start-4 row-end-12 col-span-3">
+      <div className="col-start-2 row-start-4 row-end-12 col-span-3">
         <HeroImage />
-      </section>
-      <section className="col-start-1 row-start-8 row-end-11 col-span-4">
+      </div>
+      <div className="col-start-1 row-start-8 row-end-11 col-span-4">
         <Title
           staticText="WEB"
           dynamicText1="DESIGNER"
@@ -33,7 +34,7 @@ export default function HeroSection({ isInitialContentVisible }) {
           dynamicText3="ENGINEER"
           dynamicText4="INNOVATOR"
         />
-      </section>
+      </div>
       <IntroText showInitialContent={isInitialContentVisible} />
     </section>
   );

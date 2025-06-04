@@ -6,31 +6,40 @@ import PixelComMock from "/images/PixelCom_Mock.webp";
 
 export default function ProyectSection() {
   return (
-    <section id="proyectos" className="my-24 scroll-mt-24">
+    <section
+      id="proyectos"
+      data-section
+      className="min-h-screen scroll-mt-24 border border-red-500 z-50"
+    >
       <div className="mb-24">
         <SectionTitle text1="Mis" highlight="Proyectos" text2="Favoritos" />
       </div>
-      <div className="-mx-4 w-screen left-0 overflow-hidden">
-        <JarallaxProyect
-          titulo="Garatge Javier"
-          descripcion="Proyecto personal"
-          imgSrc={TallerMock}
-          link="https://github.com/Dylan10123/Garaje_Javier"
-        />
-        <JarallaxProyect
-          titulo="KodeMise"
-          descripcion="Red Social"
-          imgSrc={KodeMiseMock}
-        />
-        <JarallaxProyect
-          titulo="TV Graphics"
-          descripcion="Grafismo para carreras"
-          imgSrc={PixelComMock}
-          link={
-            "https://pixelcom.io/professional-sports-broadcast-graphics-solution"
-          }
-        />
-      </div>
+
+      <div
+        id="proyectos"
+        className="h-[1px] w-full opacity-0 pointer-events-none"
+        data-intersection-trigger
+      />
+
+      <JarallaxProyect
+        titulo="Garatge Javier"
+        descripcion="Proyecto personal"
+        imgSrc={TallerMock}
+        link="https://github.com/Dylan10123/Garaje_Javier"
+      />
+      <JarallaxProyect
+        titulo="KodeMise"
+        descripcion="Red Social"
+        imgSrc={KodeMiseMock}
+      />
+      <JarallaxProyect
+        titulo="TV Graphics"
+        descripcion="Grafismo para carreras"
+        imgSrc={PixelComMock}
+        link={
+          "https://pixelcom.io/professional-sports-broadcast-graphics-solution"
+        }
+      />
     </section>
   );
 }

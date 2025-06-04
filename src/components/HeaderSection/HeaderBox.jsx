@@ -27,7 +27,9 @@ export default function HeaderBox({ showInitialContent }) {
   };
 
   useEffect(() => {
-    const sections = document.querySelectorAll("section");
+    const sections = document.querySelectorAll(
+      "[data-section], [data-intersection-trigger]"
+    );
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -37,7 +39,7 @@ export default function HeaderBox({ showInitialContent }) {
         });
       },
       {
-        rootMargin: "-50% 0px -40% 0px", // Detecta la sección centrada en pantalla
+        rootMargin: "-40% 0px -40% 0px",
         threshold: 0.1,
       }
     );
