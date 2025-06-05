@@ -17,7 +17,7 @@ export default function ProyectSection() {
         data-intersection-trigger
       />
 
-      <article className="-mx-4 w-screen left-0 overflow-hidden">
+      <article className="-mx-4 left-0 overflow-hidden">
         <JarallaxProyect
           titulo="Garatge Javier"
           descripcion="Proyecto personal"
