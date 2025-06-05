@@ -8,16 +8,16 @@ export default function SectionTitle({ highlight, text1 = "", text2 = "" }) {
   const getTranslate = (position) => {
     switch (position) {
       case "left":
-        return "-translate-x-10 leading-6";
+        return "-translate-x-10 leading-6 lg:leading-12";
       case "right":
-        return "translate-x-10 leading-18";
+        return "translate-x-10 leading-18 lg:leading-28";
       default:
         return "";
     }
   };
 
   return (
-    <h2 className="h-[50vh] text-6xl my-10 flex flex-col items-center justify-center text-balance">
+    <h2 className="h-[50vh] text-6xl lg:text-9xl my-10 flex flex-col items-center justify-center text-balance">
       {lines.map((line, i) => (
         <div
           key={i}

@@ -1,5 +1,5 @@
-import CopyToClipboard from "react-copy-to-clipboard";
 import { CopyIcon, CheckCircledIcon } from "@radix-ui/react-icons";
+import CopyToClipboard from "react-copy-to-clipboard";
 import SectionTitle from "../SectionTitle";
 import { useState } from "react";
 

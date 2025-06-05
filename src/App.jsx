@@ -26,7 +26,7 @@ function App() {
       <header className="fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out h-auto delay-[600ms]">
         <HeaderBox showInitialContent={isInitialContentVisible} />
       </header>
-      <main className="px-4">
+      <main className="px-4 flex flex-col">
         <HeroSection isInitialContentVisible={isInitialContentVisible} />
         <StackSection />
         <ExperienceSection />

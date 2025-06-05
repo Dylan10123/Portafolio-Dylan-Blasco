@@ -28,9 +28,11 @@ export default function Title({
     <>
       {showTitle && (
         <>
-          <h1 className="animate-fade-in-up font-vina-sans text-8xl leading-tight font-bold grid grid-cols-2 grid-rows-2 z-10">
-            <span className="col-span-2 leading-24 ">{staticText}</span>
-            <span className="col-span-2 relative flex text-violet-400">
+          <h1 className="animate-fade-in-up font-vina-sans text-8xl lg:text-[15rem] leading-tight font-bold grid grid-cols-2 grid-rows-2 z-10 h-fit">
+            <span className="col-span-2 leading-24 lg:leading-none">
+              {staticText}
+            </span>
+            <span className="col-span-2 row-start-2 relative flex text-violet-400">
               <span className="animate-rotate-cube-pause transform-3d">
                 <span className="absolute backface-hidden inset-0 flex items-center font-bold  [transform:rotateX(0deg)_translateZ(0.4em)]">
                   {dynamicText1}
@@ -47,7 +49,7 @@ export default function Title({
               </span>
             </span>
           </h1>
-          <h2 className="animate-fade-in-left text-4xl font-pinyon text-right mx-8">
+          <h2 className="animate-fade-in-left text-right relative bottom-0 right-0 text-4xl font-pinyon pr-4 pb-2 lg:text-6xl">
             Dylan Blasco
           </h2>
         </>

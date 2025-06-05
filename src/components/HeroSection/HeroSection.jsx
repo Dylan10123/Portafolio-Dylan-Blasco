@@ -1,32 +1,18 @@
 import HeroImage from "./HeroImage";
+import IntroText from "./IntroText";
 import Title from "./Title";
-import TextBox from "../TextBox";
-
-function IntroText({ showInitialContent }) {
-  return (
-    <section className="row-start-12 col-start-1 col-span-4 mt-6">
-      {showInitialContent && (
-        <TextBox className="animate-fade-in-up">
-          Creativo y amante del diseño digital, con una mentalidad
-          perfeccionista que me impulsa a mejorar y pulir constantemente mis
-          habilidades.
-        </TextBox>
-      )}
-    </section>
-  );
-}
 
 export default function HeroSection({ isInitialContentVisible }) {
   return (
     <section
       id="inicio"
       data-section
-      className="grid grid-cols-4 grid-rows-12 gap-x-4 gap-y-2 mb-12 h-screen scroll-mt-24"
+      className="grid grid-cols-4 lg:grid-cols-16 gap-x-4 mb-12 h-screen lg:h-[calc(100vh-4rem)] scroll-mt-24"
     >
-      <div className="col-start-2 row-start-4 row-end-12 col-span-3">
+      <div className="animate-blurred-fade-in flex justify-end col-span-full lg:col-start-9 lg:col-end-15 lg:row-start-2 lg:row-end-5 row-start-2 row-end-3 -z-10 m-0 p-0 box-border ">
         <HeroImage />
       </div>
-      <div className="col-start-1 row-start-8 row-end-11 col-span-4">
+      <div className="col-span-full row-start-2 lg:row-start-3 lg:col-start-3 lg:col-end-10 self-end">
         <Title
           staticText="WEB"
           dynamicText1="DESIGNER"
