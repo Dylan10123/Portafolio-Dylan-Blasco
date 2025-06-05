@@ -20,12 +20,14 @@ export default function JarallaxProyect({ titulo, descripcion, imgSrc, link }) {
       className="jarallax relative h-[90vh] w-full overflow-hidden"
       data-jarallax
     >
+      {/* Div para que detecte el intersection observer */}
       <div
         id="proyectos"
         className="h-[1px] w-full opacity-0 pointer-events-none"
         data-intersection-trigger
       />
 
+      {/* Imagen de fondo */}
       <div className="jarallax-img relative top-0 left-0 w-full h-full">
         <img
           src={imgSrc}
@@ -34,8 +36,10 @@ export default function JarallaxProyect({ titulo, descripcion, imgSrc, link }) {
         />
       </div>
 
-      <div className="relative inset-0 bg-black/30 z-10" />
+      {/* Capa oscura */}
+      <div className="absolute h-full w-full inset-0 bg-black/40 z-10" />
 
+      {/* Capa del texto */}
       <div className="relative z-20 flex flex-col justify-center items-center h-full text-center px-4">
         <h2 className="text-4xl md:text-6xl font-bold text-white">{titulo}</h2>
         <p className="mt-2 text-lg md:text-xl text-zinc-200">{descripcion}</p>
