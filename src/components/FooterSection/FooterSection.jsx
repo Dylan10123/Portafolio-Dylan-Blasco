@@ -1,13 +1,36 @@
+import { useState, useEffect } from "react";
 import {
   GitHubLogoIcon,
   LinkedInLogoIcon,
   ExternalLinkIcon,
 } from "@radix-ui/react-icons";
 
+const useIsMobile = (breakpoint = 768) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < breakpoint);
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, [breakpoint]);
+
+  return isMobile;
+};
+
+function Separador() {
+  const isMobile = useIsMobile();
+
+  return !isMobile && <div id="separador" className="w-px h-32 bg-zinc-300" />;
+}
+
 export default function FooterSection() {
   return (
-    <footer className="bg-zinc-900 text-zinc-400 py-8 mt-24 px-4 text-base">
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+    <footer className="bg-gradient-to-t from-zinc-950 to-zinc-800 text-zinc-400 pb-8 pt-32 mt-24 px-4 text-base lg:flex lg:items-center lg:justify-center">
+      <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-8 self-center">
         <div className="flex gap-6">
           <a
             href="https://github.com/Dylan10123"
@@ -24,14 +47,27 @@ export default function FooterSection() {
             <LinkedInLogoIcon className="w-8 h-8" />
           </a>
         </div>
-        <div className="flex gap-6">
-          <a href="#inicio">Inicio</a>
-          <a href="#stack">Stack</a>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#contacto">Contacto</a>
+
+        <Separador />
+
+        <div className="flex gap-6 lg:flex-col lg:gap-2">
+          <a className="hover:text-violet-400 p-2 " href="#inicio">
+            Inicio
+          </a>
+          <a className="hover:text-violet-400 p-2" href="#stack">
+            Stack
+          </a>
+          <a className="hover:text-violet-400 p-2" href="#proyectos">
+            Proyectos
+          </a>
+          <a className="hover:text-violet-400 p-2" href="#contacto">
+            Contacto
+          </a>
         </div>
 
-        <div className="flex flex-col gap-2 items-start w-full">
+        <Separador />
+
+        <div className="flex flex-col gap-2 items-start w-ful lg:w-fit">
           Inspirado en los portafolios de:
           <a
             href="https://valentincheval.design"
@@ -58,6 +94,10 @@ export default function FooterSection() {
             Michelangelo Giorgini
           </a>
         </div>
+
+        <Separador />
+
+        <div id="separador" className="w-px h-full bg-zinc-700" />
         <p>© 2025 Dylan Blasco</p>
       </div>
     </footer>

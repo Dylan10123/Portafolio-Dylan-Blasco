@@ -17,7 +17,7 @@ export default function JarallaxProyect({ titulo, descripcion, imgSrc, link }) {
   return (
     <section
       ref={parallaxRef}
-      className="jarallax relative h-[90vh] w-full overflow-hidden"
+      className="jarallax relative h-[90vh] w-full overflow-hidden mask-y-from-90% mask-y-to-100%"
       data-jarallax
     >
       {/* Div para que detecte el intersection observer */}
