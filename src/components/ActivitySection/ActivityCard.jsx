@@ -9,7 +9,7 @@ export default function ActivityCard({
   infoLink,
 }) {
   return (
-    <section className="bg-zinc-900/70 p-4 rounded-2xl flex flex-col gap-3 shadow-lg">
+    <section className="max-w-xl bg-zinc-900/70 p-4 rounded-2xl flex flex-col gap-3 shadow-lg">
       <div className="flex items-center justify-between">
         <h3 className="text-2xl font-bold text-violet-400"> {title} </h3>
         <div className="w-12 h-12 flex items-center justify-center rounded-full bg-transparent hover:bg-zinc-700">

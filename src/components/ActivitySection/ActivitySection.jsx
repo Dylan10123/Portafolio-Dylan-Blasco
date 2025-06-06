@@ -4,11 +4,15 @@ import { MasterDLogo, FreeCodeCampLogo } from "../../assets/Icons";
 
 export default function ActivitySection() {
   return (
-    <section id="actividad" data-section className="min-h-screen scroll-mt-24">
+    <section
+      id="actividad"
+      data-section
+      className="lg:px-[12.5%] min-h-screen scroll-mt-24"
+    >
       <div className="my-24">
         <SectionTitle text1="Actividades" highlight="EN PROGRESO" center />
       </div>
-      <article className="flex flex-col gap-8 font-inter">
+      <article className="flex flex-col gap-8 lg:flex-row justify-center font-inter">
         <ActivityCard
           title={"Master en IA"}
           company={"MasterD | Davante"}

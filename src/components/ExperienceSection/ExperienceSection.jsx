@@ -28,7 +28,7 @@ export default function ExperienceSection() {
     <section
       id="experiencia"
       data-section
-      className="min-h-screen scroll-mt-24"
+      className="min-h-screen scroll-mt-24 lg:px-[12.5%] flex flex-col lg:gap-20"
     >
       <div className="mb-24">
         <SectionTitle text1="¿Qué" highlight="EXPERIENCIA" text2="Tengo?" />
