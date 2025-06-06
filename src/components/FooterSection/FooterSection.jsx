@@ -36,6 +36,7 @@ export default function FooterSection() {
             href="https://github.com/Dylan10123"
             target="_blank"
             rel="noopener noreferrer"
+            className="hover:text-violet-400"
           >
             <GitHubLogoIcon className="w-8 h-8" />
           </a>
@@ -43,6 +44,7 @@ export default function FooterSection() {
             href="https://www.linkedin.com/in/dylan-blasco-de-souza-904b20262/"
             target="_blank"
             rel="noopener noreferrer"
+            className="hover:text-violet-400"
           >
             <LinkedInLogoIcon className="w-8 h-8" />
           </a>
