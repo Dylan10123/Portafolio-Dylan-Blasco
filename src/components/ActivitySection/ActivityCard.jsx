@@ -7,7 +7,7 @@ export default function ActivityCard({
   logo,
   body,
   infoLink,
-  tag = "En curso",
+  tag,
 }) {
   return (
     <article className="max-w-xl bg-zinc-900/70 p-4 rounded-2xl flex flex-col gap-3 shadow-lg min-h-[300px]">
@@ -20,9 +20,11 @@ export default function ActivityCard({
         </div>
       </div>
 
-      <span className="text-xs bg-violet-500 text-white rounded-full px-2 py-0.5 w-fit">
-        {tag}
-      </span>
+      {tag && (
+        <span className="text-xs bg-violet-500 text-white rounded-full px-2 py-0.5 w-fit">
+          {tag}
+        </span>
+      )}
 
       {/* Este div crece para ocupar el espacio disponible */}
       <div className="flex flex-col gap-6 flex-1">
@@ -36,7 +38,6 @@ export default function ActivityCard({
           </div>
         </div>
       </div>
-
       {/* Este enlace se empuja al fondo */}
       <a
         href={infoLink}

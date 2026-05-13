@@ -29,11 +29,7 @@ export default function JarallaxProyect({ titulo, descripcion, imgSrc, link }) {
 
       {/* Imagen de fondo */}
       <div className="jarallax-img relative top-0 left-0 w-full h-full">
-        <img
-          src={imgSrc}
-          alt="Imagen de la web Garatge Javier"
-          className="w-full h-full object-cover"
-        />
+        <img src={imgSrc} alt={titulo} className="w-full h-full object-cover" />
       </div>
 
       {/* Capa oscura */}

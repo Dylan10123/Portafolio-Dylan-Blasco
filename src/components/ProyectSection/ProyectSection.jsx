@@ -2,6 +2,7 @@ import SectionTitle from "../SectionTitle";
 import JarallaxProyect from "./JarallaxProyect";
 import TallerMock from "/images/Taller_Mock.webp";
 import KodeMiseMock from "/images/KodeMise_Mock.webp";
+import RanniaMock from "/images/Rannia_Mock.webp";
 import PixelComMock from "/images/PixelCom_Mock.webp";
 
 export default function ProyectSection() {
@@ -19,23 +20,24 @@ export default function ProyectSection() {
 
       <article className="-mx-4 left-0 overflow-hidden">
         <JarallaxProyect
-          titulo="Garatge Javier"
-          descripcion="Proyecto personal"
-          imgSrc={TallerMock}
-          link="https://github.com/Dylan10123/Garaje_Javier"
-        />
-        <JarallaxProyect
-          titulo="KodeMise"
-          descripcion="Red Social"
-          imgSrc={KodeMiseMock}
+          titulo="Rannia Proyectos Modulares"
+          descripcion="Web corporativa para empresa de construcción modular. Next.js, React, SEO optimizado, formulario de captación de leads, galería de proyectos."
+          imgSrc={RanniaMock}
+          link={"https://www.ranniamodular.es"}
         />
         <JarallaxProyect
           titulo="TV Graphics"
-          descripcion="Grafismo para carreras"
+          descripcion="Proyecto de grafismo para carreras en el que he trabajado. +50 pull request aprobadas en las que aportaba soluciones a problemas de diseño y bugs de desarrollo."
           imgSrc={PixelComMock}
           link={
             "https://pixelcom.io/professional-sports-broadcast-graphics-solution"
           }
+        />
+        <JarallaxProyect
+          titulo="Garatge Javier"
+          descripcion="Proyecto escolar creado para poner en práctica mis conocimientos de JavaScript, PHP y JQuery."
+          imgSrc={TallerMock}
+          link="https://garaje-javier.vercel.app"
         />
       </article>
     </section>

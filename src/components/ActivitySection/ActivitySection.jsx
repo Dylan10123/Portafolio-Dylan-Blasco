@@ -16,16 +16,18 @@ export default function ActivitySection() {
       <div className="flex flex-col gap-6 lg:flex-row justify-center font-inter">
         <ActivityCard
           title={"Master en IA"}
+          tag={"Terminado"}
           company={"MasterD | Davante"}
           companyDescription={"Compañía de formación abierta lider en España"}
           logo={<MasterDLogo />}
           body={
-            "Cursando un máster en IA para complementar mis habilidades en desarrollo web y crear aplicaciones más inteligentes y adaptativas"
+            "Máster en IA para complementar mis habilidades en desarrollo web y crear aplicaciones más inteligentes y adaptativas"
           }
           infoLink={"https://www.masterd.es/master-inteligencia-artificial"}
         />
         <ActivityCard
           title={"Cursos online"}
+          tag={"Pausado"}
           company={"FreeCodeCamp"}
           companyDescription={
             "Plataforma de formación en línea que enseña desarrollo web"
@@ -38,7 +40,7 @@ export default function ActivitySection() {
         />
         <ActivityCard
           title={"Proyectos personales"}
-          tag={"Pausado"}
+          tag={"En curso"}
           logo={<GitHubLogoIcon width="48" height="48" />}
           body={
             "En mi tiempo libre trabajo en proyectos personales para mejorar mis habilidades en desarrollo web y Python. Subo algunos de mi proyectos a GitHub."
