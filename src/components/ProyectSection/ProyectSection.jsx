@@ -1,7 +1,6 @@
 import SectionTitle from "../SectionTitle";
 import JarallaxProyect from "./JarallaxProyect";
 import TallerMock from "/images/Taller_Mock.webp";
-import KodeMiseMock from "/images/KodeMise_Mock.webp";
 import RanniaMock from "/images/Rannia_Mock.webp";
 import PixelComMock from "/images/PixelCom_Mock.webp";
 
