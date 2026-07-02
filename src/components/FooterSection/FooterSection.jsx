@@ -103,18 +103,18 @@ export default function FooterSection() {
         <p>
           <a href="https://www.dylanblasco.dev">Portafolio Dylan Blasco</a>©
           2026 by
-          <a href="https://www.dylanblasco.dev">Dylan Blasco de Souza</a> is
+          <a href="https://www.dylanblasco.dev"> Dylan Blasco de Souza</a> is
           licensed under
-          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+          <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0</a>
           <img
             src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
             alt=""
-            style="max-width: 1em;max-height:1em;margin-left: .2em;"
+            className="w-4 h-4 ml-2 inline-block"
           />
           <img
             src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
             alt=""
-            style="max-width: 1em;max-height:1em;margin-left: .2em;"
+            className="w-4 h-4 ml-2 inline-block"
           />
         </p>
       </div>
