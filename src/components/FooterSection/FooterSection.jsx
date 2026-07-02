@@ -100,7 +100,7 @@ export default function FooterSection() {
         <Separador />
 
         <div id="separador" className="w-px h-full bg-zinc-700" />
-        <p>© 2025 Dylan Blasco</p>
+        <p><a href="https://www.dylanblasco.dev">Portafolio Dylan Blasco</a> © 2026 by <a href="https://www.dylanblasco.dev">Dylan Blasco de Souza</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
       </div>
     </footer>
   );
