@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 import {
   GitHubLogoIcon,
   LinkedInLogoIcon,
   ExternalLinkIcon,
-} from "@radix-ui/react-icons";
+} from '@radix-ui/react-icons';
 
 const useIsMobile = (breakpoint = 768) => {
   const [isMobile, setIsMobile] = useState(false);
@@ -14,8 +14,8 @@ const useIsMobile = (breakpoint = 768) => {
     };
 
     checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-    return () => window.removeEventListener("resize", checkScreenSize);
+    window.addEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener('resize', checkScreenSize);
   }, [breakpoint]);
 
   return isMobile;
@@ -100,7 +100,23 @@ export default function FooterSection() {
         <Separador />
 
         <div id="separador" className="w-px h-full bg-zinc-700" />
-        <p><a href="https://www.dylanblasco.dev">Portafolio Dylan Blasco</a> © 2026 by <a href="https://www.dylanblasco.dev">Dylan Blasco de Souza</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
+        <p>
+          <a href="https://www.dylanblasco.dev">Portafolio Dylan Blasco</a>©
+          2026 by
+          <a href="https://www.dylanblasco.dev">Dylan Blasco de Souza</a> is
+          licensed under
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+          <img
+            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
+            alt=""
+            style="max-width: 1em;max-height:1em;margin-left: .2em;"
+          />
+          <img
+            src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
+            alt=""
+            style="max-width: 1em;max-height:1em;margin-left: .2em;"
+          />
+        </p>
       </div>
     </footer>
   );
